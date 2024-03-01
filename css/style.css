@@ -7,6 +7,10 @@
     font-family: 'Roboto Slab';
 }
 
+body{
+    background-color: var(--color-secundary);
+}
+
 section{
     background-color: var(--color-secundary);
 }
@@ -53,7 +57,6 @@ section{
     padding-right: 7%;
     height: 100%;
 }
-
 
 .bar-right, .bar-left{
     gap: 2rem;
@@ -114,6 +117,7 @@ section{
     display: flex;
     justify-content: flex-start;
     text-transform: capitalize;
+    cursor: pointer;
 }
 
 .contact-button-container > p{
@@ -179,6 +183,7 @@ section{
     z-index: -1;
     display: flex;
     flex-wrap: wrap;
+    max-height: 260vh;
 }
 
 .curved-img > img {
@@ -189,11 +194,11 @@ section{
 
 .right-curved-img {
     position: relative;    
+    top: -150px;
 }
 
 .right-curved-img > img{
     position: relative;
-    top: -150px;
 }
 
 .curved-info{
@@ -203,11 +208,13 @@ section{
     padding-left: 10rem;
     z-index: 2;
 }
+
 .curved-info > h2{
     color: var(--color-font);
     font-weight: 900;
     font-size: 300%;
 }
+
 .curved-info > p{
     color: var(--color-font);
     font-weight: 600;
@@ -250,13 +257,13 @@ section{
     display: flex;
     position: relative;
     z-index: 2;
-    top: -240px;
+    top: -220px;
     right: 0;
     justify-content: flex-end;
 }
 
 .bottom-curved-img > img{
-    width: 100%;
+    width: 95%;
 }
 
 .gallery{
@@ -271,7 +278,10 @@ section{
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
-    margin: 0 10rem 0 10rem;
+}
+
+.enjoy-section{
+    margin-top: 10%;
 }
 
 .enjoy{
@@ -296,7 +306,7 @@ section{
     padding: 6rem 5rem;
     border: solid 1.5vh var(--color-primary);
     max-width: 50%;
-     max-height: 70%;
+    max-height: 70%;
 }
 
 .enjoy-info h2{
@@ -311,6 +321,7 @@ section{
 }
 
 .menu{
+    margin-top: 10%;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -332,7 +343,8 @@ section{
     justify-content: center;
     align-items: center;
     gap: 3rem;
-}   
+} 
+
 .card{
     display: flex;
     flex-direction: column;
@@ -341,6 +353,7 @@ section{
     width: 100%;
     gap: 0.5rem;
 }
+
 .card-info{
     display: flex;
     flex-direction: column;
@@ -348,20 +361,101 @@ section{
 
 .card > img{
     width: 100%;
-    
-
 }
 
 .card h2{
     font-weight: 900;
 }
+
 .card , h2 h3{
   font-size: 2vh;
   color: var(--color-primary);  
   text-transform: capitalize;
 }
+
 .card p{
     font-size: 100%;
     font-weight: 700;
     color: var(--color-font);
+}
+
+.footer{
+    width: 100%;
+    height: 100vh;
+}
+
+.footer-top{
+    margin: 15% 0;
+    height: 70%;
+    background-color: var(--color-primary);
+   
+}
+
+.footer-top-information{
+    display: flex;
+    flex-flow: row no-wrap;
+    gap: 3rem;
+    width: 100%;
+    align-items: center;
+    height: 100%;
+}
+.footer-top-information img{
+    width: 40%;
+}
+
+.aside-info{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    gap: 1rem;
+}
+
+.aside-info h2{
+    font-weight: 900;
+    font-size: 6vh;
+    color: var(--color-font);
+    text-transform: capitalize;
+}
+
+.aside-info p{
+    font-weight: 800;
+    font-size: 3vh;
+    color: var(--color-font);
+}
+
+.footer-bottom{
+    width: 100%;
+    height: 70%;
+    background-color: var(--color-ternario);
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-nav{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-nav a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-font);
+    font-weight: 600;
+}
+
+.media-icons{
+    display: flex;
+    gap: 1rem;
+}
+
+.media-icons i{
+    background-color:var(--color-font);
+    cursor: pointer;
+    color: var(--color-ternario);
+    border-radius: 50%;
+    padding: .2rem;
+    font-size: 1.5rem;
 }
